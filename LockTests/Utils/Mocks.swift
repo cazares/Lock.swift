@@ -331,6 +331,10 @@ class MockWebAuth: WebAuth {
     func useUniversalLink() -> Self {
         return self
     }
+    
+    func useEphemeralSession() -> Self {
+        return self
+    }
 
     func state(_ state: String) -> Self {
         return self
@@ -343,6 +347,10 @@ class MockWebAuth: WebAuth {
 
     func parameters(_ parameters: [String : String]) -> Self {
         parameters.forEach { self.parameters[$0] = $1 }
+        return self
+    }
+
+    func redirectURL(_ redirectURL: URL) -> Self {
         return self
     }
 
