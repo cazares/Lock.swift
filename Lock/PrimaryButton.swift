@@ -130,10 +130,12 @@ class PrimaryButton: UIView, Stylable {
             range: NSRange(location: 0, length: attributedText.length))
         button.setAttributedTitle(attributedText, for: .normal)
         button.setAttributedTitle(NSAttributedString(), for: .disabled)
+        button.clipsToBounds = true
+        button.layer.cornerRadius = 3.67
     }
 
     override var intrinsicContentSize: CGSize {
-        return CGSize(width: UIView.viewNoIntrinsicMetric, height: 95)
+        return CGSize(width: UIView.viewNoIntrinsicMetric, height: 65)
     }
 
     @objc func pressed(_ sender: Any) {
