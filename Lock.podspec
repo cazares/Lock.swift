@@ -11,7 +11,7 @@ Auth0 is a SaaS that helps you with Authentication and Authorization. You can us
   s.homepage         = "https://github.com/cazares/Lock.swift"
   s.license          = 'MIT'
   s.authors          = { "Auth0" => "support@auth0.com" }, { "Hernan Zalazar" => "hernan@auth0.com" }, { "Martin Walsh" => "martin.walsh@auth0.com" }
-  s.source           = { :git => "https://github.com/cazares/Lock.swift.git", :tag => 2.18.1 }
+  s.source           = { :git => "https://github.com/cazares/Lock.swift.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/auth0'
 
   s.ios.deployment_target = "9.0"
