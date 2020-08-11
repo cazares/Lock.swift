@@ -146,7 +146,7 @@ public class HeaderView: UIView {
         titleView.translatesAutoresizingMaskIntoConstraints = false
 
         constraintEqual(anchor: logoView.centerXAnchor, toAnchor: self.centerXAnchor)
-        constraintEqual(anchor: logoView.bottomAnchor, toAnchor: titleView.topAnchor, constant: -15)
+        constraintEqual(anchor: logoView.bottomAnchor, toAnchor: self.bottomAnchor, constant: -15)
         logoView.translatesAutoresizingMaskIntoConstraints = false
 
         constraintEqual(anchor: closeButton.centerYAnchor, toAnchor: self.topAnchor, constant: 45)
